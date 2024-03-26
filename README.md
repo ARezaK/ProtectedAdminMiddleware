@@ -4,8 +4,6 @@ For protecting django admin page (or other pages) by IP address
 Add to requirements.txt
 ```
 protectedadminmiddleware@ git+https://github.com/ARezaK/ProtectedAdminMiddleware.git
-
-
 ```
 
 Add these to settings
