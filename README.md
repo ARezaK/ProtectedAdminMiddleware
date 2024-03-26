@@ -1,5 +1,5 @@
 # ProtectedAdminMiddleware
-For protecting django admin page (or others) by IP address
+For protecting django admin page (or other pages) by IP address
 
 Add these to settings
 
@@ -22,4 +22,23 @@ BANNED_URLS = [
 
 ```
 INTERNAL_IPS = ['127.0.0.1', 'otherip_addresses']
+```
+
+
+Add to INSTALLED_APPS
+```
+INSTALLED_APPS = [
+    ...
+    'ProtectedAdminMiddleware',
+    ...
+]
+```
+
+Add to middleware
+```
+MIDDLEWARE = [
+    ...
+    'ProtectedAdminMiddleware.middleware.ProtectedAdminMiddleware',
+    ...
+]
 ```
