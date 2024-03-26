@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from re import compile
 
 
-class InternalIPsOnly:
+class ProtectedAdminMiddleware:
     """
     checks the path against settings.IP_PROTECTED_PATHS
     If it matches, checks against settings.INTERNAL_IPS,
