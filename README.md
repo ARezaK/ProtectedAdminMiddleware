@@ -1,5 +1,5 @@
 # ProtectedAdminMiddleware
-For protecting django admin page by IP address
+For protecting django admin page (or others) by IP address
 
 Add these to settings
 
