@@ -34,7 +34,7 @@ Add to INSTALLED_APPS
 ```
 INSTALLED_APPS = [
     ...
-    'ProtectedAdminMiddleware',
+    'protectedadminmiddleware',
     ...
 ]
 ```
@@ -43,7 +43,7 @@ Add to middleware
 ```
 MIDDLEWARE = [
     ...
-    'ProtectedAdminMiddleware.middleware.ProtectedAdminMiddleware',
+    'protectedadminmiddleware.middleware.ProtectedAdminMiddleware',
     ...
 ]
 ```
